@@ -1,0 +1,16 @@
+/* index.css */
+
+/* Apply styles to the root element */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Style the body, assuming no other styles are applied */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Add more styles specific to the index.html file as needed */

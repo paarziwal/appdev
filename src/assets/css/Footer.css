@@ -1,0 +1,14 @@
+/* Footer.css */
+footer {
+    background-color: rgba(18, 16, 16, 1);
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .contact-info p, .copyright p {
+    margin: 0;
+  }
+  
