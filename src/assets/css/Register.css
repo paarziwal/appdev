@@ -1,0 +1,67 @@
+.signUp {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color:hsl(from #000 100 20 10);
+    transition: 0.5s;
+    z-index: 2;
+    height: 100vh;
+}
+
+.signUp .active {
+    right: 300px;
+}
+
+.video-bg {
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity:0.5;
+  }
+
+.signUp img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.2;
+}
+
+.signup-container {
+    padding: 15px;
+    width: 500px;
+    /* max-width: 55vw; */
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(197, 66, 66, 0.4);
+    background-color: rgba(255, 251, 251, 0.5);
+
+}
+.signup-container input{
+    width: 20vw;
+    /* max-width: 45vw; */
+}
+
+.signUp h2 {
+    font-size: 3rem; /* Adjust font size as needed */
+    font-weight: bold;
+    color: #a7e3c2; /* Adjust color as needed */
+  }
+  
+  .signUp p {
+    font-size: 1.5rem; /* Adjust font size as needed */
+    color: #c1dd8f; /* Adjust color as needed */
+    margin-bottom: 20px;
+  }
+  
