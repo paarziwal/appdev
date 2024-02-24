@@ -1,32 +1,145 @@
-/* Header.css */
 header {
-    background-color: rgba(18, 16, 16, 0.5);
-    color: #fff;
-    padding: 10px 0;
-    top:0;
-    width:100%;
-    text-align: center;
-    position:fixed;
+  background-color: rgba(232, 230, 230, 0.6);
+  top: 0;
+  width: 100%;
+  display : flex;
+  overflow:auto;
+  height: 100px;
+  max-width:100%;
+  /* position:fixed; */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  justify-content: space-between;
+}
+
+.logo-title {
+  display: flex; /* Use flexbox */
+  align-items: center; /* Align items vertically */
+}
+
+
+.logo img {
+  padding-left: 20px;
+  /* margin-top:10px; */
+  width: 100px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul li {
+  display: inline-block;
+  text-align: center;
+  padding: 20px;
+  color: rgb(16, 15, 15);
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+nav ul li a {
+  color: #0c0c0c;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  border-bottom: 10px solid purple;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
+  position: relative;
+  margin: 10px;
+}
+
+.logo-item {
+  margin-right: auto; /* Push the logo to the far left */
+}
+
+.main__container {
+  background-color: grey;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  border-radius: 50%;
+  background: conic-gradient(from 360deg at 50% 0%, rgb(0, 17, 255), rgb(255, 255, 255));
+  box-shadow: 0px -4px 20px 14px rgba(0,0,0,0.1);
+  -webkit-animation: rotar 2s infinite linear;
+  animation: rotar 2s infinite linear;
+  border: 2px solid rgb(89, 152, 255);
+}
+
+.main_container__2{
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: rgb(202, 202, 255);
+  box-shadow: Active 0px -7px 11px 4px rgba(6, 56, 255, 0.1), 0px -7px 11px 4px rgba(83, 108, 255, 0.1);
+  background-image: url('https://cdn.pixabay.com/photo/2018/04/18/18/56/user-3331256_1280.png');
+  background-size: cover;
+  background-position: center center; 
+}
+
+.div__punto{
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 0px;
+  background-color: white;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  box-shadow: Active 0px -7px 11px 4px rgba(6, 56, 255, 0.1), 0px -7px 11px 4px rgba(83, 108, 255, 0.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Animation */
+
+@-webkit-keyframes rotar {
+  from {
+    transform: rotate(0deg);
   }
-  
-  .logo img {
-    width: 100px;
-    height: auto;
+  to {
+    transform: rotate(360deg);
   }
-  
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+}
+
+@keyframes rotar {
+  from {
+    transform: rotate(0deg);
   }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 20px;
+  to {
+    transform: rotate(360deg);
   }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
+}

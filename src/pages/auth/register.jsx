@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { Button, DatePicker, Form, Input, message, Modal, Select } from 'antd';
 import { LockOutlined, MailOutlined, UserOutlined } from '@ant-design/icons';
 import '../../assets/css/Register.css';
-import video from "../../assets/videos/univclip1.mp4"
 
 export default function Register() {
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -32,11 +31,9 @@ export default function Register() {
   return (
     <>
       <section className="signUp">
-      <h2>Welcome, New User!</h2>
-      <p>We're excited to have you on board. Please fill in your details below:</p>
-      <video className="video-bg" autoPlay loop muted>
-              <source src={video} type="video/mp4" />
-            </video>
+      <h2 className="title">Welcome, New User!</h2>
+      <p className="description">We're excited to have you on board. Please fill in your details below:</p>
+      <div className="background-image" />
 
         <div className="signup-container">
           <Form
@@ -81,7 +78,7 @@ export default function Register() {
             >
               <Input prefix={<UserOutlined className="site-form-item-icon" />} placeholder="Name" />
             </Form.Item>
-            <Form.Item
+            {/* <Form.Item
               name="birthDate"
               rules={[
                 {
@@ -91,9 +88,9 @@ export default function Register() {
               ]}
             >
               <DatePicker format="DD-MM-YYYY" placeholder="Birth Date" />
-            </Form.Item>
+            </Form.Item> */}
 
-            <Form.Item
+            {/* <Form.Item
               name="gender"
               rules={[
                 {
@@ -112,7 +109,7 @@ export default function Register() {
                 <Select.Option value="Female">Female</Select.Option>
                 <Select.Option value="Other">Other</Select.Option>
               </Select>
-            </Form.Item>
+            </Form.Item> */}
 
             <Form.Item
               name="phone_number"

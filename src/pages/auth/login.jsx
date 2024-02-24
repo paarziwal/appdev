@@ -12,6 +12,10 @@ function Login() {
     });
   };
 
+  const handleClick = () => {
+    window.location.href = 'user/home';
+  };
+
   return (
     <div className="login-container">
       <div className="background-image" />
@@ -31,7 +35,9 @@ function Login() {
             <label htmlFor="remember">Remember me</label>
           </div>
           <div className="form-group">
-            <button type="submit">Sign In</button>
+            <button type="button" className="signInButton" onClick={handleClick}>
+      Sign In
+    </button>
           </div>
         </form>
         <div className="links">

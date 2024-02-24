@@ -1,16 +1,11 @@
-/* index.css */
-
-/* Apply styles to the root element */
-#root {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-/* Style the body, assuming no other styles are applied */
-body {
+*{
   margin: 0;
-  font-family: Arial, sans-serif;
+  padding:0;
+  box-sizing: border-box;
+  user-select: none;
 }
 
-/* Add more styles specific to the index.html file as needed */
+body, html{
+  width: 100lvw;
+  height: 100lvh;
+}

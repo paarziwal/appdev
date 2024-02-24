@@ -3,7 +3,6 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color:hsl(from #000 100 20 10);
     transition: 0.5s;
     z-index: 2;
     height: 100vh;
@@ -13,16 +12,18 @@
     right: 300px;
 }
 
-.video-bg {
-    position:absolute;
+.background-image {
+    position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: center;
-    opacity:0.5;
+    background-image: url("../images/univ.jpg");
+    background-repeat: no-repeat;
+    opacity:0.8;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
   }
 
 .signUp img {
@@ -45,7 +46,7 @@
     justify-content: center;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(197, 66, 66, 0.4);
-    background-color: rgba(255, 251, 251, 0.5);
+    background-color: rgba(255, 251, 251, 0.8);
 
 }
 .signup-container input{
@@ -53,15 +54,36 @@
     /* max-width: 45vw; */
 }
 
-.signUp h2 {
-    font-size: 3rem; /* Adjust font size as needed */
-    font-weight: bold;
-    color: #a7e3c2; /* Adjust color as needed */
+.title {
+    font-size: 56px;
+    font-weight:800;
+    color: #ff00ff; /* Bright colored text */
+    font-family: 'Arial', sans-serif; /* Different font */
+    animation: fadeIn 1s ease; /* Animation */
   }
   
-  .signUp p {
-    font-size: 1.5rem; /* Adjust font size as needed */
-    color: #c1dd8f; /* Adjust color as needed */
-    margin-bottom: 20px;
+  .description {
+    font-size: 24px;
+    color: #141717; /* Another bright color */
+    font-family: 'Verdana', sans-serif; /* Different font */
+    animation: slideIn 1s ease; /* Animation */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-50px);
+    }
+    to {
+      transform: translateY(0);
+    }
   }
   

@@ -1,15 +1,21 @@
 import PropTypes from 'prop-types';
+import Header from './Header';
+import Footer from './Footer';
+import "../../assets/css/UserLayout.css"
+
 
 const UserLayout = ({children}) =>{
     return (
-        <div className="container">
+        <div className="user_container">
             <header>
-                
+                <Header/>
             </header>
-            <main>
+            <main className="user_main">
                 {children}
             </main>
-            <footer></footer>
+            <footer>
+                <Footer/>
+            </footer>
         </div>
     )
 }

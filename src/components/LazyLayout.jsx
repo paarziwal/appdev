@@ -1,9 +1,15 @@
 import { Suspense } from "react"
 import PropTypes from 'prop-types'
+import loading from "../../src/assets/images/loading.gif" // Import your loading GIF
 
-const LazyLayout=({component: Component, ...rest}) => {
+const LazyLayout = ({ component: Component, ...rest }) => {
     return ( 
-        <Suspense fallback="Loading...">
+        <Suspense fallback={<img src={loading} alt="Loading..." style={{
+            position: 'fixed',
+            top: '50%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)',
+        }} />}>
             <Component {...rest}/>
         </Suspense>
     )
@@ -13,4 +19,4 @@ LazyLayout.propTypes = {
     component: PropTypes.elementType.isRequired
 }
 
-export default LazyLayout
+export default LazyLayout;
