@@ -9,9 +9,7 @@ const LazyRegister = lazy(()=>import("./pages/auth/Register"))
 const LazyHome = lazy(()=> import("./pages/user/Home.jsx"))
 const LazyProfile = lazy(()=> import("./pages/user/StudentProfile.jsx"))
 const LazyCourses = lazy(()=> import("./pages/user/Coursesdata.jsx"))
-const LazyLanding = lazy(()=> import("./pages/auth/LandingPage.jsx"))
-import Courses from "./pages/user/Coursesdata.jsx";
-const LazyDashboard = lazy(()=> import("./pages/auth/LandingPage.jsx"))
+// const LazyDashboard = lazy(()=> import("./pages/auth/LandingPage.jsx"))
 const UserRoutes = () => {
   return(
     <UserLayout>
@@ -24,15 +22,15 @@ const UserRoutes = () => {
   )
 }
 
-const AdminRoutes = () => {
-  return(
-    <UserLayout>
-    <Routes>
-      <Route path="/dashboard" element={<LazyLayout component={LazyDashboard}/>}/>
-    </Routes>
-    </UserLayout>
-  )
-}
+// const AdminRoutes = () => {
+//   return(
+//     <UserLayout>
+//     <Routes>
+//       <Route path="/dashboard" element={<LazyLayout component={LazyDashboard}/>}/>
+//     </Routes>
+//     </UserLayout>
+//   )
+// }
 
 
 const App = () => {
@@ -42,8 +40,8 @@ const App = () => {
       <Route path="/educonnect/login" element={<LazyLayout component={LazyLogin}/>}/>
       <Route path="/educonnect/register" element={<LazyLayout component={LazyRegister}/>}/>
       <Route path="/educonnect/user/*" element={<UserRoutes/>}/>
-      <Route path="/educonnect/user/Courses1" element={<Courses/>}/>
-      <Route path="/educonnect/admin/*" element={<AdminRoutes/>}/>
+      {/* <Route path="/educonnect/user/Courses1" element={<Courses/>}/> */}
+      {/* <Route path="/educonnect/admin/*" element={<AdminRoutes/>}/> */}
     </Routes>
   );
 };

@@ -1,15 +1,13 @@
 
 
 import '../../assets/css/Header.css'; // Import the CSS file for styling
-import pic from "../../assets/images/univlogo.png"
+import pic from "../../assets/images/educonnectlogo.png"
 
 const Header = () => {
   return (
     <header>
       <div className="logo">
-        <h1 className="logo-title">
         <img src={pic} alt="EduConnect" />
-        EDUCONNECT</h1>
       </div>
       <nav>
         <ul>

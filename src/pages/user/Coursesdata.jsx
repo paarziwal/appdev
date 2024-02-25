@@ -1,46 +1,27 @@
-import Courses from './Courses.jsx';
+
+import Courses from './Courses'; // Import the Boxes component
 
 function Coursesdata() {
-  // Sample course data
   const courses = [
     {
-      image: '../../src/assets/images/computer.jpg',
-      name: 'Computer Science',
-      fee: 1000,
-      seats: 50,
-      duration: '4 years',
-      description: 'Engage and learn',
+      name: "Course 1",
+      description: "This is the description of Course 1.",
+      fees: "$100",
+      image: "..course1.jpg" // Replace "course1.jpg" with the path to your image
     },
     {
-        image: '../../src/assets/images/univ1.jpg',
-      name: 'Electrical Engineering',
-      fee: 1200,
-      seats: 40,
-      duration: '4 years',
-      description: 'Elevate your skills',
+      name: "Course 2",
+      description: "This is the description of Course 2.",
+      fees: "$150",
+      image: "course2.jpg" // Replace "course2.jpg" with the path to your image
     },
-    {
-      image: '../../src/assets/images/univ.jpg',
-    name: 'Mechanical Engineering',
-    fee: 1800,
-    seats: 35,
-    duration: '4 years',
-    description: 'Develop your skills',
-  }
-    // {
-    //     image: '../../src/assets/images/ba.jpg',
-    //   name: 'Business Administration',
-    //   fee: 800,
-    //   seats: 60,
-    //   duration: '4 years',
-    //   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    // },
-  ];
+    // Add more course objects as needed
+  ]; // Example data array
 
   return (
-    <div className="App">
-      {/* <h1>Courses</h1> */}
-      <Courses courses={courses} />
+    <div>
+      <h1>Boxes</h1>
+      <Courses data={courses} />
     </div>
   );
 }

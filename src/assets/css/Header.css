@@ -13,16 +13,17 @@ header {
   justify-content: space-between;
 }
 
-.logo-title {
-  display: flex; /* Use flexbox */
+.logo {
+  display: flex; /* Ensure the logo is a flex container */
   align-items: center; /* Align items vertically */
+  margin-right: auto; /* Push the logo to the far left */
 }
-
 
 .logo img {
   padding-left: 20px;
   /* margin-top:10px; */
-  width: 100px;
+  width: 400px;
+  height:auto;
 }
 
 nav ul {
